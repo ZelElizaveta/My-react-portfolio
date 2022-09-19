@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/EmailJs-tutorial
 /.pnp
 .pnp.js
 

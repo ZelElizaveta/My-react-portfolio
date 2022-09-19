@@ -1,0 +1,12 @@
+.hero-img-not-found::before {
+    content: "";
+    background: url("../../IMG/IMG/BG-not-found.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

@@ -1,0 +1,147 @@
+.about {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.left-about img {
+    width: 100%;
+    border: 1px solid #333;
+    object-fit: cover;
+}
+
+.right-about h1 {
+    margin-bottom: 2rem;
+}
+
+.right-about p {
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+.skill-container{
+    max-width: 1140px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.heading-about {
+    text-align: center;
+    margin-top: 4rem;
+}
+.skill-card{
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #464646;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+.skill{
+    font-size: 2rem;
+    color: #464646;
+    line-height: 200px;
+}
+.skill-card:hover{
+    background: var(--backgroundColor);
+}
+.skill-card:hover .skill{
+    color: #fff;
+}
+.skill-card.large{
+    grid-column: 2 span;
+}
+
+.skill-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.skill-card{
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #464646;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+.skill{
+    font-size: 2rem;
+    color: #464646;
+    line-height: 200px;
+}
+.skill-card:hover{
+    background: var(--backgroundColor);
+}
+.skill-card:hover .skill{
+    color: #fff;
+}
+.skill-card.large{
+    grid-column: 2 span;
+}
+
+@media screen and (max-width: 1025px) {
+    .about, .skill-container {
+       max-width: 90%;
+       gap: 20px;
+    }
+
+    .heading-about {
+        margin-top: 2rem;
+    }
+
+    .skill {
+        font-size: 1.5rem;
+    }
+
+    .right-about h1 {
+        font-size: 1.5rem;
+    }
+
+    .right-about p {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .btn-about {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .heading-about {
+        font-size: 1.5rem;
+    }
+    .about, .skill-container {
+        grid-template-columns: 1fr;
+    }
+    .right-about h1 {
+        text-align: center;
+    }
+    
+    .right-about p {
+        text-align: center;
+    }
+
+    .skill-card.large{
+        grid-column: 1 span;
+    }
+
+    .btn-about {
+        margin-left: 29%;
+    }
+
+}
+
